@@ -1,0 +1,9 @@
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\bin\Debug\netcoreapp3.1\Recipes.Domain.deps.json
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\bin\Debug\netcoreapp3.1\Recipes.Domain.dll
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\bin\Debug\netcoreapp3.1\Recipes.Domain.pdb
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\obj\Debug\netcoreapp3.1\Recipes.Domain.csprojAssemblyReference.cache
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\obj\Debug\netcoreapp3.1\Recipes.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\obj\Debug\netcoreapp3.1\Recipes.Domain.AssemblyInfoInputs.cache
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\obj\Debug\netcoreapp3.1\Recipes.Domain.AssemblyInfo.cs
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\obj\Debug\netcoreapp3.1\Recipes.Domain.dll
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Domain\obj\Debug\netcoreapp3.1\Recipes.Domain.pdb

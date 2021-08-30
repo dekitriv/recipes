@@ -1,0 +1,12 @@
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\bin\Debug\netcoreapp3.1\Recipes.Application.deps.json
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\bin\Debug\netcoreapp3.1\Recipes.Application.dll
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\bin\Debug\netcoreapp3.1\Recipes.Application.pdb
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\bin\Debug\netcoreapp3.1\Recipes.Domain.dll
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\bin\Debug\netcoreapp3.1\Recipes.Domain.pdb
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.csprojAssemblyReference.cache
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.AssemblyInfoInputs.cache
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.AssemblyInfo.cs
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.csproj.CopyComplete
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.dll
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.pdb
+C:\Users\Korisnik\source\repos\Recipes\Recipes.Application\obj\Debug\netcoreapp3.1\Recipes.Application.csproj.CoreCompileInputs.cache
