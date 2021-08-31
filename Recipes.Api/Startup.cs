@@ -12,7 +12,9 @@ using Microsoft.Extensions.Logging;
 using Recipes.Api.Core;
 using Recipes.Api.Core.Actors;
 using Recipes.Application;
+using Recipes.Application.Email;
 using Recipes.DataAccess;
+using Recipes.Implementation.Email;
 using Recipes.Implementation.Logging;
 
 namespace Recipes.Api
@@ -31,9 +33,11 @@ namespace Recipes.Api
         {
             services.AddTransient<RecipesContext>();
             services.AddUseCases();
+            services.AddValidation();
             services.AddTransient<UseCaseExecutor>();
             services.AddTransient<IApplicationActor, FakeApiActorAdmin>();
             services.AddTransient<IUseCaseLogger, DatabaseUseCaseLogger>();
+            services.AddTransient<IEmailSender, SmtpEmailSender>();
             services.AddControllers();
         }
 

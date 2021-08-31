@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Recipes.Application.DataTransfer;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Recipes.Application.Commands.User
 {
-    interface IUpdateUserCommand
+    public interface IUpdateUserCommand : ICommand<UserDto>
     {
     }
 }

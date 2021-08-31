@@ -4,6 +4,7 @@ using Recipes.Application.Commands.Category;
 using Recipes.Application.Commands.Ingredient;
 using Recipes.Application.Commands.Nutrition;
 using Recipes.Application.Commands.Recipe;
+using Recipes.Application.Commands.User;
 using Recipes.Application.Queries.Category;
 using Recipes.Application.Queries.Ingredients;
 using Recipes.Application.Queries.Nutritions;
@@ -12,11 +13,13 @@ using Recipes.Implementation.Commands.CategoryCommands;
 using Recipes.Implementation.Commands.IngredientCommands;
 using Recipes.Implementation.Commands.NutritionCommands;
 using Recipes.Implementation.Commands.RecipeCommands;
+using Recipes.Implementation.Commands.UserCommands;
 using Recipes.Implementation.Queries;
 using Recipes.Implementation.Queries.CategoryQueries;
 using Recipes.Implementation.Queries.IngredientQueries;
 using Recipes.Implementation.Queries.NutritionQueries;
 using Recipes.Implementation.Queries.RecipeQueries;
+using Recipes.Implementation.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,6 +55,26 @@ namespace Recipes.Api.Core
             services.AddTransient<ICreateRecipeCommand, EfCreateRecipeCommand>();
             services.AddTransient<IDeleteRecipeCommand, EfDeleteRecipeCommand>();
             services.AddTransient<IUpdateRecipeCommand, EfUpdateRecipeCommand>();
+
+            services.AddTransient<ICreateUserCommand, EfCreateUserCommand>();
+            services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
+            services.AddTransient<IUpdateUserCommand, EfUpdateUserCommand>();
+        }
+
+        public static void AddValidation(this IServiceCollection services)
+        {
+            services.AddTransient<CreateCategoryValidator>();
+            services.AddTransient<UpdateCategoryValidator>();
+
+            services.AddTransient<CreateRecipeValidator>();
+            services.AddTransient<UpdateRecipeValidator>();
+
+            services.AddTransient<CreateIngredientValidator>();
+            services.AddTransient<CreateNutritionValidator>();
+
+            services.AddTransient<CreateUserValidator>();
+            services.AddTransient<UpdateUserValidator>();
+
         }
     }
 }

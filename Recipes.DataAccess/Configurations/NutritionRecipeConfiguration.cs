@@ -11,7 +11,6 @@ namespace Recipes.DataAccess.Configurations
     {
         public void Configure(EntityTypeBuilder<NutritionRecipe> builder)
         {
-            builder.HasIndex(x => x.Amount).IsUnique();
             builder.Property(x => x.Amount).IsRequired();
         }
     }

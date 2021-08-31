@@ -1,7 +1,9 @@
-﻿using Recipes.Application.Commands.Recipe;
+﻿using FluentValidation;
+using Recipes.Application.Commands.Recipe;
 using Recipes.Application.DataTransfer;
 using Recipes.DataAccess;
 using Recipes.Domain;
+using Recipes.Implementation.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +14,13 @@ namespace Recipes.Implementation.Commands.RecipeCommands
     public class EfCreateRecipeCommand : ICreateRecipeCommand
     {
         private readonly RecipesContext _context;
+        private readonly CreateRecipeValidator _validator;
 
-        public EfCreateRecipeCommand(RecipesContext context)
+
+        public EfCreateRecipeCommand(RecipesContext context, CreateRecipeValidator validator)
         {
             _context = context;
+            _validator = validator;
         }
 
         public int Id => 10;
@@ -24,6 +29,8 @@ namespace Recipes.Implementation.Commands.RecipeCommands
 
         public void Execute(RecipeDto request)
         {
+            _validator.ValidateAndThrow(request);
+
             var recipe = new Recipe
             {
                 Name = request.Name,

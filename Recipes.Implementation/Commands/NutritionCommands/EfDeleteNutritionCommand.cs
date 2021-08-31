@@ -17,7 +17,7 @@ namespace Recipes.Implementation.Commands.NutritionCommands
             _context = context;
         }
 
-        public int Id => 9;
+        public int Id => 8;
 
         public string Name => "Delete Nutrition EF";
 

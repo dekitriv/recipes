@@ -102,12 +102,9 @@ namespace Recipes.DataAccess.Migrations
 
                     b.Property<string>("Amount")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IngredientId", "RecipeId");
-
-                    b.HasIndex("Amount")
-                        .IsUnique();
 
                     b.HasIndex("RecipeId");
 
@@ -155,9 +152,6 @@ namespace Recipes.DataAccess.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("NutritionId", "RecipeId");
-
-                    b.HasIndex("Amount")
-                        .IsUnique();
 
                     b.HasIndex("RecipeId");
 
@@ -239,9 +233,6 @@ namespace Recipes.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Order")
-                        .IsUnique();
-
                     b.HasIndex("RecipeId");
 
                     b.ToTable("Steps");
@@ -311,6 +302,35 @@ namespace Recipes.DataAccess.Migrations
                         .HasFilter("[Email] IS NOT NULL");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Recipes.Domain.UserUseCase", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("UseCaseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserUseCase");
                 });
 
             modelBuilder.Entity("Recipes.Domain.CategoryRecipe", b =>
@@ -392,6 +412,17 @@ namespace Recipes.DataAccess.Migrations
                     b.Navigation("Recipe");
                 });
 
+            modelBuilder.Entity("Recipes.Domain.UserUseCase", b =>
+                {
+                    b.HasOne("Recipes.Domain.User", "User")
+                        .WithMany("UserUseCases")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Recipes.Domain.Category", b =>
                 {
                     b.Navigation("CategoryRecipes");
@@ -421,6 +452,8 @@ namespace Recipes.DataAccess.Migrations
             modelBuilder.Entity("Recipes.Domain.User", b =>
                 {
                     b.Navigation("Recipes");
+
+                    b.Navigation("UserUseCases");
                 });
 #pragma warning restore 612, 618
         }

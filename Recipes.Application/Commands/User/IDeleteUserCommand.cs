@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Recipes.Application.Commands.User
 {
-    interface IDeleteUserCommand
+    public interface IDeleteUserCommand : ICommand<int>
     {
     }
 }

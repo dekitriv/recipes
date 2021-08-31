@@ -14,3 +14,19 @@ C:\Users\Korisnik\source\repos\Recipes\Recipes.Implementation\obj\Debug\netcorea
 C:\Users\Korisnik\source\repos\Recipes\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.csproj.CopyComplete
 C:\Users\Korisnik\source\repos\Recipes\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.dll
 C:\Users\Korisnik\source\repos\Recipes\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Implementation.deps.json
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Implementation.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Implementation.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Application.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.DataAccess.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Domain.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Application.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.DataAccess.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\bin\Debug\netcoreapp3.1\Recipes.Domain.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.AssemblyInfoInputs.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.AssemblyInfo.cs
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Implementation\obj\Debug\netcoreapp3.1\Recipes.Implementation.csproj.CoreCompileInputs.cache

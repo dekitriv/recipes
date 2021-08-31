@@ -12,5 +12,7 @@ namespace Recipes.Domain
         public string Password { get; set; }
 
         public virtual ICollection<Recipe> Recipes { get; set; } = new HashSet<Recipe>();
+        public virtual ICollection<UserUseCase> UserUseCases { get; set; } = new HashSet<UserUseCase>();
+
     }
 }

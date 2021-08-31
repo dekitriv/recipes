@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj",
       "projectName": "Recipes.Domain",
-      "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj",
+      "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Sabx0LUwJeEKFG67wID8r9R6Agr8+HCxhKz6+tPfldfE1bslmTDp4w7yxNtBJDMpkW1/1UtNBy2DvgTwb5+vbA==",
+  "dgSpecHash": "dnkQ2CrO2rhAm7F5XquzMOezPquVW0FP8AP6CX1pDmqcTdNNLtAJEQiThwolwA+bZZbIe04UVZ3Wxoa7pchSAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Korisnik\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

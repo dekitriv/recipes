@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentValidation/10.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2614,6 +2623,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "FluentValidation": "10.3.3",
           "Recipes.Application": "1.0.0",
           "Recipes.DataAccess": "1.0.0"
         },
@@ -2627,6 +2637,24 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.3.3": {
+      "sha512": "sgRC+7q4mnmDHE9ehk2cvb+FDTy/gtw5iBoKFY3FVp1ZwFsLS0kIcdSpNlCO3XyyNIzZI2ca8I/YiFG9pM6x0Q==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "sha512": "Y4rs5aMEXY8G7wJo5S3EEt6ltqyOTr/qOeZzfn+hw/fuQj5GppGckMY5psGLETo1U9hcT5MmAhaT5xtusM1b5g==",
       "type": "package",
@@ -8581,11 +8609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Api\\Recipes.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Api\\Recipes.Api.csproj",
       "projectName": "Recipes.Api",
-      "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Api\\Recipes.Api.csproj",
+      "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Api\\Recipes.Api.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Api\\obj\\",
+      "outputPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8601,14 +8629,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj": {
-              "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj"
+            "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj": {
+              "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj"
             },
-            "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj"
+            "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj"
             },
-            "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj": {
-              "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj"
+            "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj": {
+              "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj"
             }
           }
         }

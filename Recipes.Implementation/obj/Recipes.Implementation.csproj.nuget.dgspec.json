@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj",
         "projectName": "Recipes.Application",
-        "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj": {
-                "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj"
+              "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj",
         "projectName": "Recipes.DataAccess",
-        "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj": {
-                "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj"
+              "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj",
         "projectName": "Recipes.Domain",
-        "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\Recipes.Domain.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\Recipes.Domain.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -196,14 +196,14 @@
         }
       }
     },
-    "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj",
         "projectName": "Recipes.Implementation",
-        "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\Recipes.Implementation.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\Recipes.Implementation.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Implementation\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,11 +219,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj": {
-                "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.Application\\Recipes.Application.csproj"
+              "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj": {
+                "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj"
               },
-              "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj"
+              "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj"
               }
             }
           }
@@ -236,6 +236,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

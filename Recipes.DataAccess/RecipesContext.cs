@@ -67,6 +67,8 @@ namespace Recipes.DataAccess
         public DbSet<Step> Steps { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UseCaseLog> UseCaseLogs { get; set; }
+        public DbSet<UserUseCase> UserUseCase { get; set; }
+
 
 
     }

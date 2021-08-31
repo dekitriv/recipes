@@ -11,7 +11,6 @@ namespace Recipes.DataAccess.Configurations
     {
         public void Configure(EntityTypeBuilder<Step> builder)
         {
-            builder.HasIndex(x => x.Order).IsUnique();
             builder.Property(x => x.Order).IsRequired();
             builder.Property(x => x.Text).IsRequired();
         }

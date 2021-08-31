@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3obGm8I1M+0SbeFAUtbaVjZCiXP30JjJrKmJ5nnl6Kiry08bOxRqcIzydRete9vy1RY+BC8EPtRRAIR5MbKpgA==",
+  "dgSpecHash": "yp/u8zXXeSqGHHy4325ZNdE/SwhhrQ5vh5s85b5Xut8WU2ZRU9wKBZBNCzl63yWShIiL1+xhaR2mSMOhSA0qYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\source\\repos\\Recipes\\Recipes.DataAccess\\Recipes.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.DataAccess\\Recipes.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

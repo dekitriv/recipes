@@ -13,3 +13,18 @@ C:\Users\Korisnik\source\repos\Recipes\Recipes.DataAccess\obj\Debug\netcoreapp3.
 C:\Users\Korisnik\source\repos\Recipes\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.pdb
 C:\Users\Korisnik\source\repos\Recipes\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.genruntimeconfig.cache
 C:\Users\Korisnik\source\repos\Recipes\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.DataAccess.deps.json
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.DataAccess.runtimeconfig.json
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.DataAccess.runtimeconfig.dev.json
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.DataAccess.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.DataAccess.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.Domain.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\bin\Debug\netcoreapp3.1\Recipes.Domain.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.AssemblyInfo.cs
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.pdb
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.DataAccess\obj\Debug\netcoreapp3.1\Recipes.DataAccess.genruntimeconfig.cache
