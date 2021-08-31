@@ -7,6 +7,7 @@ using Recipes.Application.Commands.Recipe;
 using Recipes.Application.Commands.User;
 using Recipes.Application.Queries.Category;
 using Recipes.Application.Queries.Ingredients;
+using Recipes.Application.Queries.Log;
 using Recipes.Application.Queries.Nutritions;
 using Recipes.Application.Queries.Recipe;
 using Recipes.Implementation.Commands.CategoryCommands;
@@ -17,6 +18,7 @@ using Recipes.Implementation.Commands.UserCommands;
 using Recipes.Implementation.Queries;
 using Recipes.Implementation.Queries.CategoryQueries;
 using Recipes.Implementation.Queries.IngredientQueries;
+using Recipes.Implementation.Queries.LogQueries;
 using Recipes.Implementation.Queries.NutritionQueries;
 using Recipes.Implementation.Queries.RecipeQueries;
 using Recipes.Implementation.Validators;
@@ -59,6 +61,9 @@ namespace Recipes.Api.Core
             services.AddTransient<ICreateUserCommand, EfCreateUserCommand>();
             services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
             services.AddTransient<IUpdateUserCommand, EfUpdateUserCommand>();
+
+            services.AddTransient<IGetLogsQuery, EfGetLogsQuery>();
+
         }
 
         public static void AddValidation(this IServiceCollection services)
