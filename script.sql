@@ -1,7 +1,6 @@
 USE [master]
 GO
-
-/****** Object:  Database [Recipes]    Script Date: 8/30/2021 7:14:03 AM ******/
+/****** Object:  Database [Recipes]    Script Date: 8/31/2021 7:12:56 AM ******/
 CREATE DATABASE [Recipes]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -10,103 +9,410 @@ CREATE DATABASE [Recipes]
 ( NAME = N'Recipes_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\Recipes_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
  WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
-
+ALTER DATABASE [Recipes] SET COMPATIBILITY_LEVEL = 150
+GO
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
 EXEC [Recipes].[dbo].[sp_fulltext_database] @action = 'enable'
 end
 GO
-
 ALTER DATABASE [Recipes] SET ANSI_NULL_DEFAULT OFF 
 GO
-
 ALTER DATABASE [Recipes] SET ANSI_NULLS OFF 
 GO
-
 ALTER DATABASE [Recipes] SET ANSI_PADDING OFF 
 GO
-
 ALTER DATABASE [Recipes] SET ANSI_WARNINGS OFF 
 GO
-
 ALTER DATABASE [Recipes] SET ARITHABORT OFF 
 GO
-
 ALTER DATABASE [Recipes] SET AUTO_CLOSE OFF 
 GO
-
 ALTER DATABASE [Recipes] SET AUTO_SHRINK OFF 
 GO
-
 ALTER DATABASE [Recipes] SET AUTO_UPDATE_STATISTICS ON 
 GO
-
 ALTER DATABASE [Recipes] SET CURSOR_CLOSE_ON_COMMIT OFF 
 GO
-
 ALTER DATABASE [Recipes] SET CURSOR_DEFAULT  GLOBAL 
 GO
-
 ALTER DATABASE [Recipes] SET CONCAT_NULL_YIELDS_NULL OFF 
 GO
-
 ALTER DATABASE [Recipes] SET NUMERIC_ROUNDABORT OFF 
 GO
-
 ALTER DATABASE [Recipes] SET QUOTED_IDENTIFIER OFF 
 GO
-
 ALTER DATABASE [Recipes] SET RECURSIVE_TRIGGERS OFF 
 GO
-
 ALTER DATABASE [Recipes] SET  DISABLE_BROKER 
 GO
-
 ALTER DATABASE [Recipes] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
 GO
-
 ALTER DATABASE [Recipes] SET DATE_CORRELATION_OPTIMIZATION OFF 
 GO
-
 ALTER DATABASE [Recipes] SET TRUSTWORTHY OFF 
 GO
-
 ALTER DATABASE [Recipes] SET ALLOW_SNAPSHOT_ISOLATION OFF 
 GO
-
 ALTER DATABASE [Recipes] SET PARAMETERIZATION SIMPLE 
 GO
-
 ALTER DATABASE [Recipes] SET READ_COMMITTED_SNAPSHOT OFF 
 GO
-
 ALTER DATABASE [Recipes] SET HONOR_BROKER_PRIORITY OFF 
 GO
-
 ALTER DATABASE [Recipes] SET RECOVERY SIMPLE 
 GO
-
 ALTER DATABASE [Recipes] SET  MULTI_USER 
 GO
-
 ALTER DATABASE [Recipes] SET PAGE_VERIFY CHECKSUM  
 GO
-
 ALTER DATABASE [Recipes] SET DB_CHAINING OFF 
 GO
-
 ALTER DATABASE [Recipes] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
 GO
-
 ALTER DATABASE [Recipes] SET TARGET_RECOVERY_TIME = 60 SECONDS 
 GO
-
 ALTER DATABASE [Recipes] SET DELAYED_DURABILITY = DISABLED 
 GO
-
 ALTER DATABASE [Recipes] SET QUERY_STORE = OFF
 GO
-
+USE [Recipes]
+GO
+/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[__EFMigrationsHistory](
+	[MigrationId] [nvarchar](150) NOT NULL,
+	[ProductVersion] [nvarchar](32) NOT NULL,
+ CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY CLUSTERED 
+(
+	[MigrationId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Categories]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Categories](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](30) NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[CategoryRecipes]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[CategoryRecipes](
+	[CategoryId] [int] NOT NULL,
+	[RecipeId] [int] NOT NULL,
+ CONSTRAINT [PK_CategoryRecipes] PRIMARY KEY CLUSTERED 
+(
+	[CategoryId] ASC,
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[IngredientRecipes]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[IngredientRecipes](
+	[IngredientId] [int] NOT NULL,
+	[RecipeId] [int] NOT NULL,
+	[Amount] [nvarchar](max) NOT NULL,
+ CONSTRAINT [PK_IngredientRecipes] PRIMARY KEY CLUSTERED 
+(
+	[IngredientId] ASC,
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Ingredients]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Ingredients](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](30) NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_Ingredients] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[NutritionRecipes]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[NutritionRecipes](
+	[NutritionId] [int] NOT NULL,
+	[RecipeId] [int] NOT NULL,
+	[Amount] [real] NOT NULL,
+ CONSTRAINT [PK_NutritionRecipes] PRIMARY KEY CLUSTERED 
+(
+	[NutritionId] ASC,
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Nutritions]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Nutritions](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](30) NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_Nutritions] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Recipes]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Recipes](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](450) NOT NULL,
+	[Description] [nvarchar](max) NOT NULL,
+	[Image] [nvarchar](max) NOT NULL,
+	[Servings] [real] NOT NULL,
+	[CookTime] [int] NOT NULL,
+	[UserId] [int] NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_Recipes] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Steps]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Steps](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Text] [nvarchar](max) NOT NULL,
+	[Order] [int] NOT NULL,
+	[RecipeId] [int] NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_Steps] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[UseCaseLogs]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[UseCaseLogs](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[UseCaseName] [nvarchar](max) NULL,
+	[Data] [nvarchar](max) NULL,
+	[Actor] [nvarchar](max) NULL,
+ CONSTRAINT [PK_UseCaseLogs] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Users](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[FirstName] [nvarchar](30) NOT NULL,
+	[LastName] [nvarchar](30) NOT NULL,
+	[Email] [nvarchar](450) NULL,
+	[Password] [nvarchar](max) NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[UserUseCase]    Script Date: 8/31/2021 7:12:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[UserUseCase](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UserId] [int] NOT NULL,
+	[UseCaseId] [int] NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedAt] [datetime2](7) NOT NULL,
+	[DeletedAt] [datetime2](7) NULL,
+ CONSTRAINT [PK_UserUseCase] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [IX_Categories_Name]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Categories_Name] ON [dbo].[Categories]
+(
+	[Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_CategoryRecipes_RecipeId]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE NONCLUSTERED INDEX [IX_CategoryRecipes_RecipeId] ON [dbo].[CategoryRecipes]
+(
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_IngredientRecipes_RecipeId]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE NONCLUSTERED INDEX [IX_IngredientRecipes_RecipeId] ON [dbo].[IngredientRecipes]
+(
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [IX_Ingredients_Name]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Ingredients_Name] ON [dbo].[Ingredients]
+(
+	[Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_NutritionRecipes_RecipeId]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE NONCLUSTERED INDEX [IX_NutritionRecipes_RecipeId] ON [dbo].[NutritionRecipes]
+(
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [IX_Nutritions_Name]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Nutritions_Name] ON [dbo].[Nutritions]
+(
+	[Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [IX_Recipes_Name]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Recipes_Name] ON [dbo].[Recipes]
+(
+	[Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_Recipes_UserId]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE NONCLUSTERED INDEX [IX_Recipes_UserId] ON [dbo].[Recipes]
+(
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_Steps_RecipeId]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE NONCLUSTERED INDEX [IX_Steps_RecipeId] ON [dbo].[Steps]
+(
+	[RecipeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [IX_Users_Email]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Users_Email] ON [dbo].[Users]
+(
+	[Email] ASC
+)
+WHERE ([Email] IS NOT NULL)
+WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_UserUseCase_UserId]    Script Date: 8/31/2021 7:12:56 AM ******/
+CREATE NONCLUSTERED INDEX [IX_UserUseCase_UserId] ON [dbo].[UserUseCase]
+(
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[CategoryRecipes]  WITH CHECK ADD  CONSTRAINT [FK_CategoryRecipes_Categories_CategoryId] FOREIGN KEY([CategoryId])
+REFERENCES [dbo].[Categories] ([Id])
+GO
+ALTER TABLE [dbo].[CategoryRecipes] CHECK CONSTRAINT [FK_CategoryRecipes_Categories_CategoryId]
+GO
+ALTER TABLE [dbo].[CategoryRecipes]  WITH CHECK ADD  CONSTRAINT [FK_CategoryRecipes_Recipes_RecipeId] FOREIGN KEY([RecipeId])
+REFERENCES [dbo].[Recipes] ([Id])
+GO
+ALTER TABLE [dbo].[CategoryRecipes] CHECK CONSTRAINT [FK_CategoryRecipes_Recipes_RecipeId]
+GO
+ALTER TABLE [dbo].[IngredientRecipes]  WITH CHECK ADD  CONSTRAINT [FK_IngredientRecipes_Ingredients_IngredientId] FOREIGN KEY([IngredientId])
+REFERENCES [dbo].[Ingredients] ([Id])
+GO
+ALTER TABLE [dbo].[IngredientRecipes] CHECK CONSTRAINT [FK_IngredientRecipes_Ingredients_IngredientId]
+GO
+ALTER TABLE [dbo].[IngredientRecipes]  WITH CHECK ADD  CONSTRAINT [FK_IngredientRecipes_Recipes_RecipeId] FOREIGN KEY([RecipeId])
+REFERENCES [dbo].[Recipes] ([Id])
+GO
+ALTER TABLE [dbo].[IngredientRecipes] CHECK CONSTRAINT [FK_IngredientRecipes_Recipes_RecipeId]
+GO
+ALTER TABLE [dbo].[NutritionRecipes]  WITH CHECK ADD  CONSTRAINT [FK_NutritionRecipes_Nutritions_NutritionId] FOREIGN KEY([NutritionId])
+REFERENCES [dbo].[Nutritions] ([Id])
+GO
+ALTER TABLE [dbo].[NutritionRecipes] CHECK CONSTRAINT [FK_NutritionRecipes_Nutritions_NutritionId]
+GO
+ALTER TABLE [dbo].[NutritionRecipes]  WITH CHECK ADD  CONSTRAINT [FK_NutritionRecipes_Recipes_RecipeId] FOREIGN KEY([RecipeId])
+REFERENCES [dbo].[Recipes] ([Id])
+GO
+ALTER TABLE [dbo].[NutritionRecipes] CHECK CONSTRAINT [FK_NutritionRecipes_Recipes_RecipeId]
+GO
+ALTER TABLE [dbo].[Recipes]  WITH CHECK ADD  CONSTRAINT [FK_Recipes_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Recipes] CHECK CONSTRAINT [FK_Recipes_Users_UserId]
+GO
+ALTER TABLE [dbo].[Steps]  WITH CHECK ADD  CONSTRAINT [FK_Steps_Recipes_RecipeId] FOREIGN KEY([RecipeId])
+REFERENCES [dbo].[Recipes] ([Id])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Steps] CHECK CONSTRAINT [FK_Steps_Recipes_RecipeId]
+GO
+ALTER TABLE [dbo].[UserUseCase]  WITH CHECK ADD  CONSTRAINT [FK_UserUseCase_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[UserUseCase] CHECK CONSTRAINT [FK_UserUseCase_Users_UserId]
+GO
+USE [master]
+GO
 ALTER DATABASE [Recipes] SET  READ_WRITE 
 GO
-
