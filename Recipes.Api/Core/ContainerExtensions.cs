@@ -80,6 +80,9 @@ namespace Recipes.Api.Core
             services.AddTransient<CreateUserValidator>();
             services.AddTransient<UpdateUserValidator>();
 
+            services.AddTransient<CreateLoginValidator>();
+
+
         }
     }
 }

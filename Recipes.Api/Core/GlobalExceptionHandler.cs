@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Recipes.Application.Exceptions;
 using System;
@@ -45,7 +46,7 @@ namespace Blog.Api.Core
                             message = "Resource not found."
                         };
                         break;
-                    /*case ValidationException validationException:
+                    case ValidationException validationException:
                         statusCode = StatusCodes.Status422UnprocessableEntity;
 
 
@@ -58,7 +59,7 @@ namespace Blog.Api.Core
                                 x.ErrorMessage
                             })
                         };
-                        break;*/
+                        break;
                 }
 
                 httpContext.Response.StatusCode = statusCode;

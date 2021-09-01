@@ -270,8 +270,6 @@ C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Recipes.Implementation.pdb
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Recipes.Domain.pdb
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.csprojAssemblyReference.cache
-C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.csproj.CoreCompileInputs.cache
-C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.AssemblyInfoInputs.cache
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.AssemblyInfo.cs
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.RazorTargetAssemblyInfo.cache
@@ -281,3 +279,11 @@ C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.dll
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.pdb
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.genruntimeconfig.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.MvcApplicationPartsAssemblyInfo.cache
