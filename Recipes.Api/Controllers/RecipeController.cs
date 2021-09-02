@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Recipes.Application;
@@ -48,7 +49,7 @@ namespace Recipes.Api.Controllers
 
         // PUT: api/Recipe/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] RecipeDto dto, [FromServices] IUpdateRecipeCommand command)
+        public IActionResult Put(int id, [FromForm] RecipeDto dto, [FromServices] IUpdateRecipeCommand command)
         {
             dto.Id = id;
             _executor.ExecuteCommand(command, dto);

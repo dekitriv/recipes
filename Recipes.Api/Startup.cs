@@ -136,12 +136,9 @@ namespace Recipes.Api
             }
             app.UseMiddleware<GlobalExceptionHandler>();
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
-            app.UseAuthorization();
-            app.UseAuthentication();
+            app.UseStaticFiles();
 
             app.UseSwagger();
 
@@ -150,6 +147,8 @@ namespace Recipes.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger");
             });
 
+            app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

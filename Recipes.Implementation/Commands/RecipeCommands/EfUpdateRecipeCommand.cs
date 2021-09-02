@@ -6,6 +6,7 @@ using Recipes.DataAccess;
 using Recipes.Domain;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -39,6 +40,20 @@ namespace Recipes.Implementation.Commands.RecipeCommands
             recipe.Description = request.Description;
             recipe.Servings = request.Servings;
             recipe.CookTime = request.CookTime;
+
+            if(request.ImageFile != null)
+            {
+                var guid = Guid.NewGuid();
+
+                var imageName = guid + "_" + request.ImageFile.FileName;
+
+                var path = Path.Combine("wwwroot", "images", imageName);
+
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    request.ImageFile.CopyTo(fileStream);
+                }
+            }
             
 
             recipe.CategoryRecipes
