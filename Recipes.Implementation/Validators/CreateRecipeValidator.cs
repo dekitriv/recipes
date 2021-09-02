@@ -36,9 +36,9 @@ namespace Recipes.Implementation.Validators
                 .NotEmpty()
                 .WithMessage("Recipe {PropertyName} is required");
 
-            RuleFor(x => x.Image)
+            RuleFor(x => x.ImageFile)
                 .NotEmpty()
-                .WithMessage("Recipe {PropertyName} is required");
+                .WithMessage("Product {PropertyName} is required");
 
             RuleFor(x => x.UserId)
                .NotEmpty()
@@ -53,6 +53,7 @@ namespace Recipes.Implementation.Validators
             RuleFor(x => x.Categories.Select(y => y.Id))
                .NotEmpty()
                .WithMessage("You need atleast one category")
+               .OverridePropertyName("Category")
                .DependentRules(() =>
                {
                    RuleFor(x => x.Categories.Select(y => y.Id))
@@ -68,6 +69,7 @@ namespace Recipes.Implementation.Validators
             RuleFor(x => x.Ingredients.Select(y => y.Id))
                .NotEmpty()
                .WithMessage("You need atleast one ingredient")
+               .OverridePropertyName("Ingredient")
                .DependentRules(() =>
                {
                    RuleFor(x => x.Ingredients.Select(y => y.Id))
@@ -88,6 +90,7 @@ namespace Recipes.Implementation.Validators
             RuleFor(x => x.Nutritions.Select(y => y.Id))
                .NotEmpty()
                .WithMessage("You need atleast one nutrition")
+               .OverridePropertyName("Nutrition")
                .DependentRules(() =>
                {
                    RuleFor(x => x.Nutritions.Select(y => y.Id))

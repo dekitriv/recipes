@@ -287,3 +287,6 @@ C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\obj\Debug\netcoreapp3.1\Recipes.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Korisnik\Desktop\Recipes asp projekat\Recipes.Api\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll

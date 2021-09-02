@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "s0WGecVT3KWdTWoQjtTy89pRS45ovjNzWcTOR3Akl7WujVrWpx+Hg/sNSoOgqReZlffaM2AaiutNkf9luntndg==",
+  "dgSpecHash": "cwP6qyGOG2Fec8BhXMJVwo0zNl64MwvTvnH8OyLcEJVQQkBMKjoH6AjeNSeF0/KLc/6T+pJL0IzneK4hRd/shQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Recipes asp projekat\\Recipes.Application\\Recipes.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Korisnik\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

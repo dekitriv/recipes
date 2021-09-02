@@ -40,7 +40,7 @@ namespace Recipes.Api.Controllers
 
         // POST: api/Recipe
         [HttpPost]
-        public IActionResult Post([FromBody] RecipeDto dto, [FromServices] ICreateRecipeCommand command)
+        public IActionResult Post([FromForm] RecipeDto dto, [FromServices] ICreateRecipeCommand command)
         {
             _executor.ExecuteCommand(command, dto);
             return StatusCode(201);

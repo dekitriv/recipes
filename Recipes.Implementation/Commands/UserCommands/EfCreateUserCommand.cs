@@ -42,7 +42,7 @@ namespace Recipes.Implementation.Commands.UserCommands
                 Password = request.Password.ComputeSHA256Hash()
             };
 
-            var userUseCases = new List<int> { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+            var userUseCases = new List<int> { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23 };
 
             userUseCases.ForEach(useCase => _context.UserUseCase.Add(new UserUseCase
             {

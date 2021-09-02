@@ -134,14 +134,14 @@ namespace Recipes.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseMiddleware<GlobalExceptionHandler>();
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
             app.UseAuthentication();
-            app.UseMiddleware<GlobalExceptionHandler>();
 
             app.UseSwagger();
 

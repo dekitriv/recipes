@@ -6,6 +6,7 @@ using Recipes.Domain;
 using Recipes.Implementation.Validators;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -31,18 +32,31 @@ namespace Recipes.Implementation.Commands.RecipeCommands
         {
             _validator.ValidateAndThrow(request);
 
+            
+
+            var guid = Guid.NewGuid();
+
+            var imageName = guid + "_" + request.ImageFile.FileName;
+
+            var path = Path.Combine("wwwroot", "images", imageName);
+
+            using (var fileStream = new FileStream(path, FileMode.Create))
+            {
+                request.ImageFile.CopyTo(fileStream);
+            }
+
             var recipe = new Recipe
             {
                 Name = request.Name,
                 Description = request.Description,
-                Image = request.Image,
+                Image = imageName,
                 Servings = request.Servings,
                 CookTime = request.CookTime,
                 UserId = request.UserId
-
             };
 
-            foreach(var categoryId in request.Categories.Select(x => x.Id))
+
+            foreach (var categoryId in request.Categories.Select(x => x.Id))
             {
                 _context.CategoryRecipes.Add(new CategoryRecipe
                 {
