@@ -38,6 +38,7 @@ namespace Recipes.Api.Controllers
             return Ok(_executor.ExecuteQuery(query, id));
         }
         // POST: api/Ingredient
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] IngredientDto dto, [FromServices] ICreateIngredientCommand command)
         {
@@ -46,6 +47,7 @@ namespace Recipes.Api.Controllers
         }
 
         // PUT: api/Ingredient/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] IngredientDto dto, [FromServices] IUpdateIngredientCommand command)
         {
@@ -55,6 +57,7 @@ namespace Recipes.Api.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteIngredientCommand command)
         {

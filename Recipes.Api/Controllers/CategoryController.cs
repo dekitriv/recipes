@@ -39,6 +39,7 @@ namespace Recipes.Api.Controllers
         }
 
         // POST: api/Category
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] CategoryDto dto, [FromServices] ICreateCategoryCommand command)
         {
@@ -47,6 +48,7 @@ namespace Recipes.Api.Controllers
         }
 
         // PUT: api/Category/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] CategoryDto dto, [FromServices] IUpdateCategoryCommand command)
         {
@@ -56,6 +58,7 @@ namespace Recipes.Api.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteCategoryCommand command)
         {

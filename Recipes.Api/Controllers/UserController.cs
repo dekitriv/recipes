@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Recipes.Application;
 using Recipes.Application.Commands.User;
 using Recipes.Application.DataTransfer;
+using Recipes.Application.Queries.User;
+using Recipes.Application.Searches;
 
 namespace Recipes.Api.Controllers
 {
@@ -23,17 +25,20 @@ namespace Recipes.Api.Controllers
         }
 
         // GET: api/User
+        [Authorize]
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get([FromQuery] UserSearchDto search, [FromServices] IGetUsersQuery query)
         {
-            return new string[] { "value1", "value2" };
+
+            return Ok(_executor.ExecuteQuery(query, search));
         }
 
         // GET: api/User/5
+        [Authorize]
         [HttpGet("{id}", Name = "GetUser")]
-        public string Get(int id)
+        public IActionResult Get(int id, [FromServices] IGetUserQuery query)
         {
-            return "value";
+            return Ok(_executor.ExecuteQuery(query, id));
         }
 
         // POST: api/User
@@ -44,6 +49,7 @@ namespace Recipes.Api.Controllers
             return StatusCode(201);
         }
         // PUT: api/User/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] UserDto dto, [FromServices] IUpdateUserCommand command)
         {
@@ -53,6 +59,7 @@ namespace Recipes.Api.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteUserCommand command)
         {

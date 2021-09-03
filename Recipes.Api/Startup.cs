@@ -16,7 +16,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Recipes.Api.Core;
-using Recipes.Api.Core.Actors;
 using Recipes.Api.Core.Jwt;
 using Recipes.Application;
 using Recipes.Application.Email;
@@ -41,90 +40,15 @@ namespace Recipes.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<RecipesContext>();
-            services.AddUseCases();
-            services.AddValidation();
             services.AddTransient<UseCaseExecutor>();
-            //services.AddTransient<IApplicationActor, FakeApiActorAdmin>();
             services.AddTransient<IUseCaseLogger, DatabaseUseCaseLogger>();
             services.AddTransient<IEmailSender, SmtpEmailSender>();
-            services.AddControllers();
             services.AddHttpContextAccessor();
-            services.AddTransient<IApplicationActor>(x =>
-            {
-                var accessor = x.GetService<IHttpContextAccessor>();
-
-                var user = accessor.HttpContext.User;
-
-                if (user.FindFirst("ActorData") == null)
-                {
-                    return new UnauthorizedActor();
-                }
-
-                var actorString = user.FindFirst("ActorData").Value;
-
-                var actor = JsonConvert.DeserializeObject<JwtActor>(actorString);
-
-                return actor;
-
-            });
-            services.AddTransient<JwtManager>();
-            services.AddAuthentication(options =>
-            {
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultSignInScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(cfg =>
-            {
-                cfg.RequireHttpsMetadata = false;
-                cfg.SaveToken = true;
-                cfg.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidIssuer = "asp_api",
-                    ValidateIssuer = true,
-                    ValidAudience = "Any",
-                    ValidateAudience = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ThisIsMyVerySecretKey")),
-                    ValidateIssuerSigningKey = true,
-                    ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero
-                };
-            });
-
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Recipes", Version = "v1" });
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                {
-                    Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
-                      Enter 'Bearer' [space] and then your token in the text input below.
-                      \r\n\r\nExample: 'Bearer 12345abcdef'",
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey,
-                    Scheme = "Bearer"
-                });
-
-                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
-                {
-                    {
-                        new OpenApiSecurityScheme
-                          {
-                            Reference = new OpenApiReference
-                              {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                              },
-                              Scheme = "oauth2",
-                              Name = "Bearer",
-                              In = ParameterLocation.Header,
-
-                            },
-                            new List<string>()
-                          }
-                    });
-            });
-
-
+            services.AddUseCases();
+            services.AddValidation();
+            services.AddJwt();
+            services.AddSwagger();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -147,8 +71,8 @@ namespace Recipes.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger");
             });
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

@@ -40,6 +40,7 @@ namespace Recipes.Api.Controllers
         }
 
         // POST: api/Nutrition
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] NutritionDto dto, [FromServices] ICreateNutritionCommand command)
         {
@@ -48,6 +49,7 @@ namespace Recipes.Api.Controllers
         }
 
         // PUT: api/Nutrition/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] NutritionDto dto, [FromServices] IUpdateNutritionCommand command)
         {
@@ -57,6 +59,7 @@ namespace Recipes.Api.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteNutritionCommand command)
         {
