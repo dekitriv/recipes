@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [Recipes]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Database [Recipes]    Script Date: 9/3/2021 5:51:59 AM ******/
 CREATE DATABASE [Recipes]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -78,7 +78,7 @@ ALTER DATABASE [Recipes] SET QUERY_STORE = OFF
 GO
 USE [Recipes]
 GO
-/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -92,7 +92,7 @@ CREATE TABLE [dbo].[__EFMigrationsHistory](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Categories]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[Categories]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -109,7 +109,7 @@ CREATE TABLE [dbo].[Categories](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CategoryRecipes]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[CategoryRecipes]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -124,7 +124,7 @@ CREATE TABLE [dbo].[CategoryRecipes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[IngredientRecipes]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[IngredientRecipes]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -140,7 +140,7 @@ CREATE TABLE [dbo].[IngredientRecipes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Ingredients]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[Ingredients]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -157,7 +157,7 @@ CREATE TABLE [dbo].[Ingredients](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[NutritionRecipes]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[NutritionRecipes]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -173,7 +173,7 @@ CREATE TABLE [dbo].[NutritionRecipes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Nutritions]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[Nutritions]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -190,7 +190,7 @@ CREATE TABLE [dbo].[Nutritions](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Recipes]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[Recipes]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -212,7 +212,7 @@ CREATE TABLE [dbo].[Recipes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Steps]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[Steps]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -231,7 +231,7 @@ CREATE TABLE [dbo].[Steps](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[UseCaseLogs]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[UseCaseLogs]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -248,7 +248,7 @@ CREATE TABLE [dbo].[UseCaseLogs](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Users]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[Users]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -268,7 +268,7 @@ CREATE TABLE [dbo].[Users](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[UserUseCase]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Table [dbo].[UserUseCase]    Script Date: 9/3/2021 5:52:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -309,6 +309,10 @@ GO
 INSERT [dbo].[Categories] ([Id], [Name], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (3, N'Cake', 0, CAST(N'2021-08-29T19:31:17.8220461' AS DateTime2), NULL)
 GO
 INSERT [dbo].[Categories] ([Id], [Name], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (7, N'Desert', 0, CAST(N'2021-09-02T18:15:51.5334128' AS DateTime2), NULL)
+GO
+INSERT [dbo].[Categories] ([Id], [Name], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (8, N'Salads', 0, CAST(N'2021-09-03T05:06:33.4668289' AS DateTime2), NULL)
+GO
+INSERT [dbo].[Categories] ([Id], [Name], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (9, N'Pizza', 0, CAST(N'2021-09-03T05:15:11.9118617' AS DateTime2), NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Categories] OFF
 GO
@@ -387,280 +391,6 @@ GO
 INSERT [dbo].[Steps] ([Id], [Text], [Order], [RecipeId], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (11, N'Peel banana, then insert in pancake', 1, 8, 0, CAST(N'2021-09-02T17:47:06.8334862' AS DateTime2), NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Steps] OFF
-GO
-SET IDENTITY_INSERT [dbo].[UseCaseLogs] ON 
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (1, CAST(N'2021-08-30T02:30:58.7435683' AS DateTime2), N'Search Categories EF', N'{"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (2, CAST(N'2021-08-30T02:31:13.9611112' AS DateTime2), N'Search Category EF', N'1', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (3, CAST(N'2021-08-30T02:34:29.0099698' AS DateTime2), N'Search Category EF', N'1', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (4, CAST(N'2021-08-30T02:34:55.9048776' AS DateTime2), N'Search Category EF', N'2', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (5, CAST(N'2021-08-30T02:34:58.0766879' AS DateTime2), N'Search Category EF', N'3', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (6, CAST(N'2021-08-30T02:34:59.1075822' AS DateTime2), N'Search Category EF', N'4', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (7, CAST(N'2021-08-30T03:55:03.1709703' AS DateTime2), N'Search Nutritions EF', N'{"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (8, CAST(N'2021-08-30T03:55:21.2137525' AS DateTime2), N'Search Nutrition EF', N'5', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (9, CAST(N'2021-08-30T03:55:34.9722249' AS DateTime2), N'Search Ingredients EF', N'{"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (10, CAST(N'2021-08-30T04:56:51.9026932' AS DateTime2), N'Search Recipe EF', N'1', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (11, CAST(N'2021-08-30T05:56:37.1320877' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (12, CAST(N'2021-08-30T05:57:24.8344355' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"EDIT","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (13, CAST(N'2021-08-30T05:57:28.2173185' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"EDIT1321","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (14, CAST(N'2021-08-30T05:57:35.0514839' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (15, CAST(N'2021-08-30T05:57:45.0454842' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"Deki","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (16, CAST(N'2021-08-30T05:59:13.5197008' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"Deki","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (17, CAST(N'2021-08-30T05:59:19.7375260' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"Dekic","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (18, CAST(N'2021-08-30T05:59:21.6360359' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"Dekicc","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (19, CAST(N'2021-08-30T05:59:26.5955630' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (20, CAST(N'2021-08-30T05:59:33.9196561' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":"1","PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (21, CAST(N'2021-08-30T05:59:50.5205039' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":3,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (22, CAST(N'2021-08-30T05:59:52.7916068' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":333,"CookTimeMax":null,"CategoryIds":[],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (23, CAST(N'2021-08-30T06:00:10.8081544' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[1],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (24, CAST(N'2021-08-30T06:00:53.4757688' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[2],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (25, CAST(N'2021-08-30T06:00:56.0402795' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[1],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (26, CAST(N'2021-08-30T06:00:57.9077125' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[5],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (27, CAST(N'2021-08-30T06:01:02.0347594' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[3],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (28, CAST(N'2021-08-30T06:01:03.4011107' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[2],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (29, CAST(N'2021-08-30T06:01:04.9423676' AS DateTime2), N'Search Recipes EF', N'{"ServingsMin":null,"ServingsMax":null,"CookTimeMin":null,"CookTimeMax":null,"CategoryIds":[1],"IngredientIds":[],"UserIds":[],"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (30, CAST(N'2021-08-31T00:14:41.9762838' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (31, CAST(N'2021-08-31T00:16:07.2679127' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (32, CAST(N'2021-08-31T00:17:58.5148498' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (33, CAST(N'2021-08-31T00:19:49.2009770' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (34, CAST(N'2021-08-31T00:26:30.4387821' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (35, CAST(N'2021-08-31T00:27:07.6087317' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (36, CAST(N'2021-08-31T00:27:41.5403886' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (37, CAST(N'2021-08-31T00:28:24.4972465' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (38, CAST(N'2021-08-31T00:31:12.9111297' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (39, CAST(N'2021-08-31T00:40:29.4080777' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 1 EDIT","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (40, CAST(N'2021-08-31T00:40:59.7252148' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (41, CAST(N'2021-08-31T00:42:18.8310241' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (42, CAST(N'2021-08-31T00:44:33.9216251' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"50"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (43, CAST(N'2021-08-31T00:46:28.8753703' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (44, CAST(N'2021-08-31T00:50:04.0162452' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (45, CAST(N'2021-08-31T00:51:02.1086502' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (46, CAST(N'2021-08-31T00:54:51.3507555' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (47, CAST(N'2021-08-31T00:55:26.6809465' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (48, CAST(N'2021-08-31T00:55:43.0016607' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":1,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (49, CAST(N'2021-08-31T00:57:47.5488998' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (50, CAST(N'2021-08-31T01:01:53.0672777' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (51, CAST(N'2021-08-31T01:03:23.2506155' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (52, CAST(N'2021-08-31T01:04:58.7576393' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (53, CAST(N'2021-08-31T01:11:22.9312163' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (54, CAST(N'2021-08-31T01:19:01.0381466' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (55, CAST(N'2021-08-31T01:20:04.2688432' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":1,"Name":null},{"Id":1,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (56, CAST(N'2021-08-31T01:23:41.5259449' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (57, CAST(N'2021-08-31T01:24:27.7788303' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (58, CAST(N'2021-08-31T01:25:07.6641332' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":4.0,"CookTime":33,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":1,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (59, CAST(N'2021-08-31T01:25:57.6457493' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (60, CAST(N'2021-08-31T01:29:27.3876066' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":0,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (61, CAST(N'2021-08-31T01:29:49.3371120' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":5,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (62, CAST(N'2021-08-31T01:30:09.6707456' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":1,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (63, CAST(N'2021-08-31T01:32:23.3217767' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":1,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (64, CAST(N'2021-08-31T01:33:54.5891869' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":1,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (65, CAST(N'2021-08-31T01:34:54.5720671' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Recipe 2 ","Description":"Description 1","Image":"image.jpg","Servings":2.0,"CookTime":23,"UserId":1,"Author":null,"Categories":[{"Id":2,"Name":null},{"Id":3,"Name":null}],"Ingredients":[{"Id":3,"Amount":"3"}],"Nutritions":[{"Id":2,"Amount":30.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0},{"Id":0,"Text":"Step 2","Order":2,"RecipeId":0}]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (66, CAST(N'2021-08-31T05:59:28.4078204' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Sima","LastName":"Strahota","Email":"sima@sima.com","Password":"sifra1","ConfirmPassword":"sifra2","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (67, CAST(N'2021-08-31T05:59:52.1246575' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Sima","LastName":"Strahota","Email":"sima@sima.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (68, CAST(N'2021-08-31T06:05:35.5086642' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Sima","LastName":"Strahota","Email":"sima@sima.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (69, CAST(N'2021-08-31T06:06:53.8077141' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Patak","LastName":"Daca","Email":"dejan.trivunovic.12.18@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (70, CAST(N'2021-08-31T06:10:04.3963590' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Garfild","LastName":"Macak","Email":"garfild@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (71, CAST(N'2021-08-31T06:12:15.8952977' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Garfild","LastName":"Macak","Email":"garfil1d@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (72, CAST(N'2021-08-31T06:14:20.3451238' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Garfild","LastName":"Macak","Email":"garfil123d@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (73, CAST(N'2021-08-31T06:15:15.6886783' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Garfild","LastName":"Macak","Email":"deki@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (74, CAST(N'2021-08-31T06:15:58.2201574' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Garfild","LastName":"Macak","Email":"bauchanel@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (75, CAST(N'2021-08-31T22:35:27.5062007' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":1}', N'Fake Api Actor Admin')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (76, CAST(N'2021-09-01T01:46:54.6103677' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Marko","LastName":"Markovic","Email":"marko@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (77, CAST(N'2021-09-01T01:48:28.7424455' AS DateTime2), N'Create User EF', N'{"Id":0,"FirstName":"Marko","LastName":"Markovic","Email":"marko@gmail.com","Password":"sifra123","ConfirmPassword":"sifra123","AllowedUseCases":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (78, CAST(N'2021-09-01T01:58:57.6732485' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":1}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (79, CAST(N'2021-09-01T01:59:53.0707882' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":1}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (80, CAST(N'2021-09-01T02:00:54.8480871' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":1}', N'(8) Marko Markovic')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (81, CAST(N'2021-09-01T02:05:59.1405669' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":1}', N'(8) Marko Markovic')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (82, CAST(N'2021-09-01T02:13:21.1492090' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":1}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (83, CAST(N'2021-09-01T02:13:35.5614514' AS DateTime2), N'Search Logs EF', N'{"DateMin":null,"DateMax":null,"Actor":null,"Keyword":null,"PerPage":10,"Page":3}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (84, CAST(N'2021-09-02T05:56:04.4495558' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (85, CAST(N'2021-09-02T05:56:34.1429747' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (86, CAST(N'2021-09-02T06:00:08.0475649' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (87, CAST(N'2021-09-02T06:10:34.6884404' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (88, CAST(N'2021-09-02T06:14:11.3282073' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (89, CAST(N'2021-09-02T06:15:28.3935467' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (90, CAST(N'2021-09-02T06:41:07.1911435' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"ImageFile":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (91, CAST(N'2021-09-02T06:42:47.2202092' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"ImageFile":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (92, CAST(N'2021-09-02T06:46:34.8037546' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (93, CAST(N'2021-09-02T06:48:14.3263674' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"5"}],"Nutritions":[{"Id":2,"Amount":5.0}],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (94, CAST(N'2021-09-02T06:48:51.0533928' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"5"}],"Nutritions":[{"Id":2,"Amount":5.0}],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (95, CAST(N'2021-09-02T06:50:54.2557510' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"5"}],"Nutritions":[{"Id":2,"Amount":5.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (96, CAST(N'2021-09-02T06:51:22.5962074' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"5"}],"Nutritions":[{"Id":2,"Amount":5.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (97, CAST(N'2021-09-02T06:55:24.8720680' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"5"}],"Nutritions":[{"Id":2,"Amount":5.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (98, CAST(N'2021-09-02T07:12:35.7006605' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":null,"Image":null,"Servings":4.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"5"}],"Nutritions":[{"Id":2,"Amount":5.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (99, CAST(N'2021-09-02T07:18:54.4478165' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"ImageFile":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (100, CAST(N'2021-09-02T07:19:16.1465278' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"ImageFile":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (101, CAST(N'2021-09-02T07:19:48.5924968' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":null,"Description":null,"ImageFile":null,"Image":null,"Servings":0.0,"CookTime":0,"UserId":0,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (102, CAST(N'2021-09-02T07:20:24.4711756' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (103, CAST(N'2021-09-02T07:20:54.5303841' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (104, CAST(N'2021-09-02T07:21:42.7645640' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (105, CAST(N'2021-09-02T07:23:00.4902990' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (106, CAST(N'2021-09-02T07:23:25.6751220' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"\"Pancakes\"","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (107, CAST(N'2021-09-02T07:24:55.0051937' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (108, CAST(N'2021-09-02T07:25:42.8338419' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (109, CAST(N'2021-09-02T07:27:45.6359021' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (110, CAST(N'2021-09-02T07:28:12.0661218' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (111, CAST(N'2021-09-02T07:29:13.6877024' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (112, CAST(N'2021-09-02T07:30:12.9872258' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (113, CAST(N'2021-09-02T07:30:31.8878940' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (114, CAST(N'2021-09-02T07:31:53.2590754' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (115, CAST(N'2021-09-02T07:34:54.5944668' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (116, CAST(N'2021-09-02T07:36:18.7453471' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (117, CAST(N'2021-09-02T07:36:43.0969987' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (118, CAST(N'2021-09-02T07:39:42.7645295' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (119, CAST(N'2021-09-02T07:40:20.5238151' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (120, CAST(N'2021-09-02T07:43:38.8277094' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (121, CAST(N'2021-09-02T07:43:55.2757641' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (122, CAST(N'2021-09-02T17:15:25.7437544' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (123, CAST(N'2021-09-02T17:15:52.3083862' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (124, CAST(N'2021-09-02T17:16:13.3494329' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (125, CAST(N'2021-09-02T17:18:37.9619823' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (126, CAST(N'2021-09-02T17:19:01.7675440' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":null,"ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[],"Ingredients":[{"Id":2,"Amount":"35"}],"Nutritions":[],"Steps":[]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (127, CAST(N'2021-09-02T17:20:28.5523579' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"35"}],"Nutritions":[{"Id":2,"Amount":0.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (128, CAST(N'2021-09-02T17:20:50.6623526' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\"","ContentType":"image/png","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"Screenshot_3.png\""],"Content-Type":["image/png"]},"Length":260157,"Name":"ImageFile","FileName":"Screenshot_3.png"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"35"}],"Nutritions":[{"Id":2,"Amount":25.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (129, CAST(N'2021-09-02T17:39:08.9015787' AS DateTime2), N'Update Recipe EF', N'{"Id":7,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg\"","ContentType":"image/jpeg","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg\""],"Content-Type":["image/jpeg"]},"Length":98385,"Name":"ImageFile","FileName":"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg"},"Image":null,"Servings":3.0,"CookTime":35,"UserId":2,"Author":null,"Categories":[{"Id":2,"Name":null}],"Ingredients":[{"Id":2,"Amount":"35"}],"Nutritions":[{"Id":2,"Amount":25.0}],"Steps":[{"Id":0,"Text":"Step 1","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (130, CAST(N'2021-09-02T17:46:40.7494358' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg\"","ContentType":"image/jpeg","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg\""],"Content-Type":["image/jpeg"]},"Length":98385,"Name":"ImageFile","FileName":"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg"},"Image":null,"Servings":3.0,"CookTime":25,"UserId":8,"Author":null,"Categories":[{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"200 grams"}],"Nutritions":[{"Id":1,"Amount":255.0}],"Steps":[{"Id":0,"Text":"Peel banana, then insert in pancake","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (131, CAST(N'2021-09-02T17:47:06.8053306' AS DateTime2), N'Create Recipe EF', N'{"Id":0,"Name":"Banana pancakes","Description":"Description 123","ImageFile":{"ContentDisposition":"form-data; name=\"ImageFile\"; filename=\"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg\"","ContentType":"image/jpeg","Headers":{"Content-Disposition":["form-data; name=\"ImageFile\"; filename=\"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg\""],"Content-Type":["image/jpeg"]},"Length":98385,"Name":"ImageFile","FileName":"attachment-richard-pasquarella-rqnfxdgxoba-unsplash.jpg"},"Image":null,"Servings":3.0,"CookTime":25,"UserId":8,"Author":null,"Categories":[{"Id":3,"Name":null}],"Ingredients":[{"Id":2,"Amount":"200 grams"}],"Nutritions":[{"Id":1,"Amount":255.0}],"Steps":[{"Id":0,"Text":"Peel banana, then insert in pancake","Order":1,"RecipeId":0}]}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (132, CAST(N'2021-09-02T18:15:50.3713595' AS DateTime2), N'Create Category EF', N'{"Id":0,"Name":"Desert"}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (133, CAST(N'2021-09-02T18:16:38.1208894' AS DateTime2), N'Create Category EF', N'{"Id":0,"Name":"Salads"}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (134, CAST(N'2021-09-02T18:21:09.1021432' AS DateTime2), N'Create Category EF', N'{"Id":0,"Name":"Salads"}', N'Unauthorized Actor')
-GO
-INSERT [dbo].[UseCaseLogs] ([Id], [CreatedAt], [UseCaseName], [Data], [Actor]) VALUES (135, CAST(N'2021-09-02T18:21:27.0051488' AS DateTime2), N'Update Category EF', N'{"Id":3,"Name":"Salads"}', N'Unauthorized Actor')
-GO
-SET IDENTITY_INSERT [dbo].[UseCaseLogs] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Users] ON 
 GO
@@ -864,23 +594,27 @@ INSERT [dbo].[UserUseCase] ([Id], [UserId], [UseCaseId], [IsDeleted], [CreatedAt
 GO
 INSERT [dbo].[UserUseCase] ([Id], [UserId], [UseCaseId], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (96, 8, 23, 0, CAST(N'2021-09-01T00:00:00.0000000' AS DateTime2), NULL)
 GO
+INSERT [dbo].[UserUseCase] ([Id], [UserId], [UseCaseId], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (97, 8, 25, 0, CAST(N'2021-09-01T00:00:00.0000000' AS DateTime2), NULL)
+GO
+INSERT [dbo].[UserUseCase] ([Id], [UserId], [UseCaseId], [IsDeleted], [CreatedAt], [DeletedAt]) VALUES (98, 8, 26, 0, CAST(N'2021-09-01T00:00:00.0000000' AS DateTime2), NULL)
+GO
 SET IDENTITY_INSERT [dbo].[UserUseCase] OFF
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [IX_Categories_Name]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Categories_Name]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE UNIQUE NONCLUSTERED INDEX [IX_Categories_Name] ON [dbo].[Categories]
 (
 	[Name] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_CategoryRecipes_RecipeId]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_CategoryRecipes_RecipeId]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE NONCLUSTERED INDEX [IX_CategoryRecipes_RecipeId] ON [dbo].[CategoryRecipes]
 (
 	[RecipeId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_IngredientRecipes_RecipeId]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_IngredientRecipes_RecipeId]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE NONCLUSTERED INDEX [IX_IngredientRecipes_RecipeId] ON [dbo].[IngredientRecipes]
 (
 	[RecipeId] ASC
@@ -888,13 +622,13 @@ CREATE NONCLUSTERED INDEX [IX_IngredientRecipes_RecipeId] ON [dbo].[IngredientRe
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [IX_Ingredients_Name]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Ingredients_Name]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE UNIQUE NONCLUSTERED INDEX [IX_Ingredients_Name] ON [dbo].[Ingredients]
 (
 	[Name] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_NutritionRecipes_RecipeId]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_NutritionRecipes_RecipeId]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE NONCLUSTERED INDEX [IX_NutritionRecipes_RecipeId] ON [dbo].[NutritionRecipes]
 (
 	[RecipeId] ASC
@@ -902,7 +636,7 @@ CREATE NONCLUSTERED INDEX [IX_NutritionRecipes_RecipeId] ON [dbo].[NutritionReci
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [IX_Nutritions_Name]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Nutritions_Name]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE UNIQUE NONCLUSTERED INDEX [IX_Nutritions_Name] ON [dbo].[Nutritions]
 (
 	[Name] ASC
@@ -910,19 +644,19 @@ CREATE UNIQUE NONCLUSTERED INDEX [IX_Nutritions_Name] ON [dbo].[Nutritions]
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [IX_Recipes_Name]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Recipes_Name]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE UNIQUE NONCLUSTERED INDEX [IX_Recipes_Name] ON [dbo].[Recipes]
 (
 	[Name] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Recipes_UserId]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Recipes_UserId]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE NONCLUSTERED INDEX [IX_Recipes_UserId] ON [dbo].[Recipes]
 (
 	[UserId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Steps_RecipeId]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Steps_RecipeId]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE NONCLUSTERED INDEX [IX_Steps_RecipeId] ON [dbo].[Steps]
 (
 	[RecipeId] ASC
@@ -930,7 +664,7 @@ CREATE NONCLUSTERED INDEX [IX_Steps_RecipeId] ON [dbo].[Steps]
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [IX_Users_Email]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_Users_Email]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE UNIQUE NONCLUSTERED INDEX [IX_Users_Email] ON [dbo].[Users]
 (
 	[Email] ASC
@@ -938,7 +672,7 @@ CREATE UNIQUE NONCLUSTERED INDEX [IX_Users_Email] ON [dbo].[Users]
 WHERE ([Email] IS NOT NULL)
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_UserUseCase_UserId]    Script Date: 9/2/2021 6:26:39 PM ******/
+/****** Object:  Index [IX_UserUseCase_UserId]    Script Date: 9/3/2021 5:52:00 AM ******/
 CREATE NONCLUSTERED INDEX [IX_UserUseCase_UserId] ON [dbo].[UserUseCase]
 (
 	[UserId] ASC
